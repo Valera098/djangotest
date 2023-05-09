@@ -7,7 +7,7 @@
   {% for p in posts %}
     <li>
         <h2>{{p.title}}</h2>
-        <p>{{p.content}}</p>
+        <p>{{p.content|truncatewords:100}}</p>
         <hr>
     </li>
   {% endfor %}
