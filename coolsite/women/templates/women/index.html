@@ -8,6 +8,8 @@
     <li>
         <h2>{{p.title}}</h2>
         <p>{{p.content|truncatewords:100}}</p>
+        <div class="clear"></div>
+        <p class="link-read-post"><a href="{{ p.get_absolute_url }}">Читать пост</a></p>
         <hr>
     </li>
   {% endfor %}
